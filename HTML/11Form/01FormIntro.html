@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form In HTML</title>
+  </head>
+  <body>
+    <h1>Form In HTML</h1>
+    <hr />
+
+    <!-- action => Path of backend  -->
+    <!-- method => get and post -->
+    <!-- get => By default -->
+    <!-- => less secure -->
+    <!-- =>  limitation of character 2048 -->
+    <!-- =>  It shows data in the url -->
+    <!-- =>  Easily Bookmarked -->
+
+    <!-- Post =>  secure -->
+    <!-- =>  No limitation of character -->
+    <!-- =>  It Never shows data in the url -->
+    <!-- =>  Not Bookmarked -->
+    <!-- =>  File Supported -->
+
+    <!-- enctype => -->
+    <!-- application/x-www-form-urlencoded => Default  -->
+    <!-- multipart/form-data => When method is post and file supported  -->
+    <!-- text/plain => used by debugger  -->
+
+    <!-- ? => String  -->
+    <!-- & => multiple data  -->
+
+    <fieldset>
+      <legend>My form</legend>
+      <form action="" method="" enctype="">
+      <!-- <form action="" method="post" enctype=""> -->
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname" required/>
+        <br /><br />
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname" />
+        <br /><br />
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="pass" />
+        <br /><br />
+        <button>Submit</button>
+      </form>
+    </fieldset>
+  </body>
+</html>
